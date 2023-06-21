@@ -72,7 +72,7 @@ export default function Navbar() {
               display={{ base: "none", md: "flex" }}
             >
               {Links.map((link) => (
-                <NavLink key={link}>{link}</NavLink>
+                <NavLink key={link?.name}>{link}</NavLink>
               ))}
             </HStack>
           </HStack>
@@ -94,7 +94,7 @@ export default function Navbar() {
           <Box pb={4} display={{ md: "none" }}>
             <Stack as={"nav"} spacing={4}>
               {Links.map((link) => (
-                <NavLink key={link}>{link}</NavLink>
+                <NavLink key={link?.name}>{link}</NavLink>
               ))}
             </Stack>
           </Box>
